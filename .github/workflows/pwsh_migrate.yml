@@ -79,7 +79,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install molecule "molecule-plugins[ec2]" ansible ansible-core==2.16.7 ansible-lint boto3 botocore pywinrm
 
-      - name: Run role tests
+      - name: Run role test's
         id: molecule-role-test
         uses: nick-fields/retry@v3
         env:
